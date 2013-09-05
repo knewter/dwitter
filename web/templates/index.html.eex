@@ -5,11 +5,12 @@
   <link rel="shortcut icon" href="/static/favicon.ico" />
 </head>
 <body>
-  <h3>Welcome to Dynamo!</h3>
-  <ol>
-    <li>Change this template at <code>web/templates/index.html.eex</code></li>
-    <li>Add new routes at <code>web/routers/application_router.ex</code></li>
-    <li>Deploy to production with <code>MIX_ENV=prod mix do compile, server</code></li>
-  </ol>
+  <h3>Welcome to Dwitter!</h3>
+
+  <h4>What are you doing?</h4>
+  <form>
+    <textarea placeholder="Just sippin'"></textarea>
+    <button>Dwit</button>
+  </form>
 </body>
 </html>
