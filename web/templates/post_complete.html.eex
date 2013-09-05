@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><%= @title %></title>
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+</head>
+<body>
+  <h3>Post successful!</h3>
+
+  <h4>You said...</h4>
+  <%= @content %>
+
+</body>
+</html>

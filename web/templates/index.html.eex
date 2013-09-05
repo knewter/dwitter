@@ -8,8 +8,8 @@
   <h3>Welcome to Dwitter!</h3>
 
   <h4>What are you doing?</h4>
-  <form>
-    <textarea placeholder="Just sippin'"></textarea>
+  <form action="/post" method="post">
+    <textarea placeholder="Just sippin'" name="content"></textarea>
     <button>Dwit</button>
   </form>
 </body>
