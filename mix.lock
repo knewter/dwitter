@@ -1,5 +1,9 @@
-[ "cowboy": {:git, "git://github.com/extend/cowboy.git", "bbee34fe1638b742796b00b39c0859395a752167", []},
+[ "amnesia": {:git, "git://github.com/meh/amnesia.git", "ee353ac14ae916c2b6f52a0feebb49d73243020b", []},
+  "continuum": {:git, "git://github.com/meh/continuum.git", "e5b00ea434e7321a36241ad8b6a36be83129ef34", []},
+  "cowboy": {:git, "git://github.com/extend/cowboy.git", "bbee34fe1638b742796b00b39c0859395a752167", []},
+  "datastructures": {:git, "git://github.com/meh/elixir-datastructures.git", "4d0ec79b95b513801f1d429e443ae30b921af8bd", []},
   "dynamo": {:git, "git://github.com/elixir-lang/dynamo.git", "282c5abf7e3795f34d2644dd6d2201569774342f", []},
+  "exquisite": {:git, "git://github.com/meh/exquisite.git", "20f896bd70b897d119a581146c929c26d97cd1d4", []},
   "hackney": {:git, "git://github.com/benoitc/hackney.git", "5b0f7eb949ebebd6fabfbc4e08a7b7231850606a", []},
   "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", []},
   "ranch": {:git, "git://github.com/extend/ranch.git", "41705752ffc7e3ecb96eef8374015ead4ca7f699", [{:ref, "0.8.5"}]} ]
