@@ -1,8 +1,10 @@
 # Dwitter
 
-This is a project built with Elixir that uses Dynamo to serve web requests.
+This is a project built with Elixir that uses Dynamo to serve web requests.  You
+might, say, tell someone how you're doing on it, and they might respond and tell
+you they don't much care.
 
-Resources:
+### Resources
 
 * [Elixir website](http://elixir-lang.org/)
 * [Elixir getting started guide](http://elixir-lang.org/getting_started/1.html)
