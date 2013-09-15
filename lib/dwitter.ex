@@ -6,6 +6,8 @@ defmodule Dwitter do
   application and its Dynamos.
   """
   def start(_type, _args) do
+    Amnesia.Schema.create
+    Amnesia.start
     Dwitter.Dynamo.start_link([max_restarts: 5, max_seconds: 5])
   end
 end

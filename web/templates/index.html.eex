@@ -1,16 +1,22 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <title><%= @title %></title>
-  <link rel="shortcut icon" href="/static/favicon.ico" />
-</head>
-<body>
-  <h3>Welcome to Dwitter!</h3>
+  <head>
+    <title><%= @title %></title>
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+  </head>
+  <body>
+    <h3>Welcome to Dwitter!</h3>
 
-  <h4>What are you doing?</h4>
-  <form action="/post" method="post">
-    <textarea placeholder="Just sippin'" name="content"></textarea>
-    <button>Dwit</button>
-  </form>
-</body>
+    <h4>What are you doing?</h4>
+    <form action="/post" method="post">
+      <textarea placeholder="Just sippin'" name="content"></textarea>
+      <button>Dweet it</button>
+    </form>
+    <%= if @recent_dweets do %>
+      <h4>Recent Dweets</h4>
+      <ul>
+        <%= Enum.join(Enum.map(@recent_dweets, fn(dweet) -> "<li>#{dweet.content}</li>" end )) %>
+      </ul>
+    <% end %>
+  </body>
 </html>

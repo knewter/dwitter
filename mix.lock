@@ -3,6 +3,7 @@
   "cowboy": {:git, "git://github.com/extend/cowboy.git", "bbee34fe1638b742796b00b39c0859395a752167", []},
   "datastructures": {:git, "git://github.com/meh/elixir-datastructures.git", "4d0ec79b95b513801f1d429e443ae30b921af8bd", []},
   "dynamo": {:git, "git://github.com/elixir-lang/dynamo.git", "282c5abf7e3795f34d2644dd6d2201569774342f", []},
+  "elixir-datastructures": {:git, "git://github.com/meh/elixir-datastructures.git", "502ecde77c46ec1d36bb51871f92b9be58aab7a6", []},
   "exquisite": {:git, "git://github.com/meh/exquisite.git", "20f896bd70b897d119a581146c929c26d97cd1d4", []},
   "hackney": {:git, "git://github.com/benoitc/hackney.git", "5b0f7eb949ebebd6fabfbc4e08a7b7231850606a", []},
   "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", []},
