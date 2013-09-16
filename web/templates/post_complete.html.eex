@@ -8,7 +8,7 @@
   <h3>Post successful!</h3>
 
   <h4>You said...</h4>
-  <%= @content %>
+  <%= @dweet.content %>
 
 </body>
 </html>
