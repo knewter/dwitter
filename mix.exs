@@ -18,8 +18,11 @@ defmodule Dwitter.Mixfile do
   end
 
   defp deps do
-    [ { :cowboy, github: "extend/cowboy" },
+    [
+      { :cowboy, github: "extend/cowboy" },
       { :dynamo, "0.1.0-dev", github: "elixir-lang/dynamo" },
-      { :amnesia, "~> 0.1.0", github: "meh/amnesia"} ]
+      { :postgrex, github: "ericmj/postgrex" },
+      { :ecto, github: "elixir-lang/ecto" }
+    ]
   end
 end
