@@ -6,10 +6,6 @@ defmodule Dwitter do
   application and its Dynamos.
   """
   def start(_type, _args) do
-    Amnesia.Schema.create
-    Amnesia.start
-    Dwitter.Database.destroy
-    Dwitter.Database.create
-    Dwitter.Dynamo.start_link([max_restarts: 5, max_seconds: 5])
+    Dwitter.Supervisor.start_link
   end
 end

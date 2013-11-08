@@ -1,6 +1,6 @@
 defmodule ApplicationRouter do
   use Dynamo.Router
-  use Dwitter.Database
+  use Ecto.Query
 
   prepare do
     # Pick which parts of the request you want to fetch
@@ -15,29 +15,15 @@ defmodule ApplicationRouter do
   # forward "/posts", to: PostsRouter
 
   post "/post" do
-    dweet = Amnesia.transaction do
-      last_dweet = Dweet.last
-      id = if last_dweet do
-             last_dweet.id + 1
-           else
-             1
-           end
-      d = Dweet[id: id, content: conn.params[:content]]
-      d.write
-      d
-    end
+    dweet = Dwitter.Dweet.new(content: conn.params[:content], author: "elixirsips")
+    Dwitter.Repo.create(dweet)
     conn = conn.assign(:dweet, dweet)
     render conn, "post_complete.html"
   end
 
   get "/" do
-    recent_dweets = Amnesia.transaction do
-      if Dweet.last do
-        Dweet.to_sequence.reverse |> Enum.take(10)
-      else
-        nil
-      end
-    end
+    query = from d in Dwitter.Dweet, order_by: [desc: d.id], limit: 10, select: d
+    recent_dweets = Dwitter.Repo.all(query)
     conn = conn.assign(:recent_dweets, recent_dweets)
     render conn, "index.html"
   end
